@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/bienvenida1Fragment">
+
+    <fragment
+        android:id="@+id/bienvenida1Fragment"
+        android:name="dam.moviles.app_pricedetective.vista.Bienvenida1Fragment"
+        android:label="Bienvenida1Fragment"
+        tools:layout="@layout/fragment_bienvenida1">
+        <action
+            android:id="@+id/action_bienvenida1Fragment_to_bienvenida2Fragment"
+            app:destination="@id/bienvenida2Fragment"
+            app:popUpTo="@id/bienvenida1Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_bienvenida1Fragment_to_principalFragment"
+            app:destination="@id/principalFragment"
+            app:popUpTo="@id/bienvenida1Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/bienvenida2Fragment"
+        android:name="dam.moviles.app_pricedetective.vista.Bienvenida2Fragment"
+        android:label="Bienvenida2Fragment"
+        tools:layout="@layout/fragment_bienvenida2">
+        <action
+            android:id="@+id/action_bienvenida2Fragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/bienvenida2Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="dam.moviles.app_pricedetective.vista.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_registroFragment"
+            app:destination="@id/registroFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_principalFragment"
+            app:destination="@id/principalFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/registroFragment"
+        android:name="dam.moviles.app_pricedetective.vista.RegistroFragment"
+        android:label="RegistroFragment"
+        tools:layout="@layout/fragment_registro">
+        <action
+            android:id="@+id/action_registroFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registroFragment_to_principalFragment"
+            app:destination="@id/principalFragment"
+            app:popUpTo="@id/registroFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/principalFragment"
+        android:name="dam.moviles.app_pricedetective.vista.PrincipalFragment"
+        android:label="PrincipalFragment"
+        tools:layout="@layout/fragment_principal">
+        <action
+            android:id="@+id/action_principalFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_principalFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/principalFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_principalFragment_to_cestaFragment"
+            app:destination="@id/cestaFragment" />
+        <action
+            android:id="@+id/action_principalFragment_to_detalleProductoFragment"
+            app:destination="@id/detalleProductoFragment" />
+        <action
+            android:id="@+id/action_principalFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_principalFragment_to_amigosFragment"
+            app:destination="@id/amigosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="dam.moviles.app_pricedetective.vista.PerfilFragment"
+        android:label="PerfilFragment"
+        tools:layout="@layout/fragment_perfil">
+        <argument
+            android:name="idUsuario"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_perfilFragment_to_principalFragment"
+            app:destination="@id/principalFragment"
+            app:popUpTo="@id/perfilFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/cestaFragment"
+        android:name="dam.moviles.app_pricedetective.vista.CestaFragment"
+        android:label="CestaFragment"
+        tools:layout="@layout/fragment_cesta">
+        <action
+            android:id="@+id/action_cestaFragment_to_principalFragment"
+            app:destination="@id/principalFragment"
+            app:popUpTo="@id/cestaFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalleProductoFragment"
+        android:name="dam.moviles.app_pricedetective.vista.DetalleProductoFragment"
+        android:label="DetalleProductoFragment"
+        tools:layout="@layout/fragment_detalle_producto">
+        <argument
+            android:name="productName"
+            app:argType="string" />
+        <argument
+            android:name="productImageUrl"
+            app:argType="string" />
+        <argument
+            android:name="supermarket"
+            app:argType="string" />
+        <argument
+            android:name="unitPrice"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <argument
+            android:name="allergens"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="ean"
+            app:argType="string"
+            android:defaultValue="" />
+        <action
+            android:id="@+id/action_detalleProductoFragment_to_principalFragment"
+            app:destination="@id/principalFragment"
+            app:popUpTo="@id/detalleProductoFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="dam.moviles.app_pricedetective.vista.SettingsFragment"
+        android:label="SettingsFragment"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_settingsFragment_to_principalFragment"
+            app:destination="@id/principalFragment"
+            app:popUpTo="@id/settingsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/amigosFragment"
+        android:name="dam.moviles.app_pricedetective.vista.AmigosFragment"
+        android:label="AmigosFragment"
+        tools:layout="@layout/fragment_amigos">
+        <action
+            android:id="@+id/action_amigosFragment_to_principalFragment"
+            app:destination="@id/principalFragment"
+            app:popUpTo="@id/amigosFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_amigosFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment">
+            <argument
+                android:name="idUsuario"
+                app:argType="string" />
+        </action>
+    </fragment>
+</navigation>

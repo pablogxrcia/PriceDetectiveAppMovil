@@ -1,0 +1,18 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="filter_options">
+        <item>Filtrar</item>
+        <item>Precio de: + a -</item>
+        <item>Precio de: - a +</item>
+    </string-array>
+    <string name="app_name">PriceDetective</string>
+    <string name="no_description">Descripción no disponible</string>
+    <string name="no_stores">Tiendas no especificadas</string>
+    <string name="no_allergens">Sin alérgenos declarados</string>
+    <string name="session_closed">Sesión cerrada</string>
+    <string name="no_products_found">No se encontraron productos</string>
+    <string name="connection_error">Error de conexión</string>
+    <string name="selected_product">Seleccionado: %s</string>
+    <string name="search_hint">Buscar productos...</string>
+</resources>

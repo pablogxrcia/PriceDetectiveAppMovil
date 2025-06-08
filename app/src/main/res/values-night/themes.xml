@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema oscuro principal -->
+    <style name="Base.Theme.App_pricedetective" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primarios -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/text_primary</item>
+
+        <!-- Secundarios -->
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent</item>
+        <item name="colorOnSecondary">@color/text_primary</item>
+
+        <!-- Fondos y superficies -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+
+        <!-- Texto -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+
+        <!-- Estado -->
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/text_inverse</item>
+
+        <!-- Ventanas -->
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:colorBackgroundFloating">@color/surface</item>
+
+        <!-- Estilos personalizados -->
+        <item name="materialButtonStyle">@style/Widget.App.Button.Dark</item>
+        <item name="materialCardViewStyle">@style/Widget.App.CardView.Dark</item>
+        <item name="textInputStyle">@style/Widget.App.TextInputLayout.Dark</item>
+        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView.Dark</item>
+        <item name="toolbarStyle">@style/Widget.App.Toolbar.Dark</item>
+        <item name="actionBarStyle">@style/Widget.App.ActionBar.Dark</item>
+    </style>
+
+    <!-- Botón oscuro -->
+    <style name="Widget.App.Button.Dark" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="backgroundTint">@color/surface</item>
+        <item name="rippleColor">@color/ripple</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="iconTint">@color/text_primary</item>
+    </style>
+
+    <!-- CardView -->
+    <style name="Widget.App.CardView.Dark" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/card_background</item>
+        <item name="cardElevation">4dp</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+
+    <!-- TextInput -->
+    <style name="Widget.App.TextInputLayout.Dark" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/text_primary</item>
+        <item name="hintTextColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="boxBackgroundColor">#1F1F1F</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+    </style>
+
+    <!-- BottomNavigationView -->
+    <style name="Widget.App.BottomNavigationView.Dark" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="backgroundTint">@color/surface</item>
+        <item name="itemIconTint">@color/text_primary</item>
+        <item name="itemTextColor">@color/text_primary</item>
+    </style>
+
+    <!-- Toolbar -->
+    <style name="Widget.App.Toolbar.Dark" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:background">@color/surface</item>
+        <item name="titleTextColor">@color/text_primary</item>
+        <item name="subtitleTextColor">@color/text_secondary</item>
+        <item name="android:theme">@style/ThemeOverlay.App.Dark</item>
+    </style>
+
+    <!-- ActionBar -->
+    <style name="Widget.App.ActionBar.Dark" parent="Widget.MaterialComponents.ActionBar.Primary">
+        <item name="android:background">@color/surface</item>
+        <item name="titleTextColor">@color/text_primary</item>
+        <item name="android:theme">@style/ThemeOverlay.App.Dark</item>
+    </style>
+
+    <!-- Overlay -->
+    <style name="ThemeOverlay.App.Dark" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <item name="colorControlNormal">@color/text_primary</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="colorPrimary">@color/text_primary</item>
+        <item name="colorOnPrimary">@color/text_inverse</item>
+    </style>
+</resources>

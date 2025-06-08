@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/todas_categorias"
+        android:icon="@drawable/ic_all"
+        android:title="Todas las categorías" />
+
+    <item
+        android:id="@+id/categoria_aceite_especias_salsas"
+        android:icon="@drawable/ic_oil"
+        android:title="Aceite, especias y salsas">
+        <menu>
+            <item
+                android:id="@+id/subcategoria_aceite_vinagre_sal"
+                android:title="Aceite, vinagre y sal" />
+            <item
+                android:id="@+id/subcategoria_especias"
+                android:title="Especias" />
+            <item
+                android:id="@+id/subcategoria_mayonesa_ketchup_mostaza"
+                android:title="Mayonesa, ketchup y mostaza" />
+            <item
+                android:id="@+id/subcategoria_otras_salsas"
+                android:title="Otras salsas" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/categoria_agua_refrescos"
+        android:icon="@drawable/ic_drink"
+        android:title="Agua y refrescos">
+        <menu>
+            <item
+                android:id="@+id/subcategoria_agua"
+                android:title="Agua" />
+            <item
+                android:id="@+id/subcategoria_isotonicos_energeticos"
+                android:title="Isotónico y energético" />
+            <item
+                android:id="@+id/subcategoria_refresco_cola"
+                android:title="Refresco de cola" />
+            <item
+                android:id="@+id/subcategoria_refresco_naranja_limon"
+                android:title="Refresco de naranja y de limón" />
+            <item
+                android:id="@+id/subcategoria_tonica_bitter"
+                android:title="Tónica y bitter" />
+            <item
+                android:id="@+id/subcategoria_refresco_te_sin_gas"
+                android:title="Refresco de té y sin gas" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/categoria_aperitivos"
+        android:icon="@drawable/ic_snacks"
+        android:title="Aperitivos">
+        <menu>
+            <item
+                android:id="@+id/subcategoria_aceitunas_encurtidos"
+                android:title="Aceitunas y encurtidos" />
+            <item
+                android:id="@+id/subcategoria_frutos_secos"
+                android:title="Frutos secos y fruta desecada" />
+            <item
+                android:id="@+id/subcategoria_patatas_snacks"
+                android:title="Patatas fritas y snacks" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/categoria_arroz_legumbres_pasta"
+        android:icon="@drawable/ic_pasta"
+        android:title="Arroz, legumbres y pasta">
+        <menu>
+            <item
+                android:id="@+id/subcategoria_arroz"
+                android:title="Arroz" />
+            <item
+                android:id="@+id/subcategoria_legumbres"
+                android:title="Legumbres" />
+            <item
+                android:id="@+id/subcategoria_pasta_fideos"
+                android:title="Pasta y fideos" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/categoria_azucar_caramelos_chocolate"
+        android:icon="@drawable/ic_candy"
+        android:title="Azúcar, caramelos y chocolate">
+        <menu>
+            <item
+                android:id="@+id/subcategoria_azucar_edulcorante"
+                android:title="Azúcar y edulcorante" />
+            <item
+                android:id="@+id/subcategoria_chicles_caramelos"
+                android:title="Chicles y caramelos" />
+            <item
+                android:id="@+id/subcategoria_chocolate"
+                android:title="Chocolate" />
+            <item
+                android:id="@+id/subcategoria_golosinas"
+                android:title="Golosinas" />
+        </menu>
+    </item>
+</menu> 

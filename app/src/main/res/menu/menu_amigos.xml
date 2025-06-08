@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/amigos_online"
+        android:icon="@drawable/baseline_people_24"
+        android:title="En Línea" />
+    
+    <item
+        android:id="@+id/todos_amigos"
+        android:icon="@drawable/baseline_group_24"
+        android:title="Todos" />
+    
+    <item
+        android:id="@+id/solicitudes_pendientes"
+        android:icon="@drawable/baseline_person_add_alt_24"
+        android:title="Pendientes" />
+    
+    <item
+        android:id="@+id/anadir_amigo"
+        android:icon="@drawable/baseline_person_add_24"
+        android:title="Añadir" />
+</menu> 

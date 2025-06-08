@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores principales -->
+    <color name="primary">#FE8C43</color>
+    <color name="primary_dark">#E67E22</color>
+    <color name="primary_light">#F2BC7C</color>
+    <color name="accent">#FF5722</color>
+    <color name="orange">#FF5722</color>
+
+    <!-- Fondos y superficies -->
+    <color name="background">#FFFFFF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="card_background">#FFFFFF</color>
+
+    <!-- Texto -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#9E9E9E</color>
+    <color name="text_inverse">#FFFFFF</color>
+
+    <!-- Estados -->
+    <color name="error">#EF5350</color>
+    <color name="success">#66BB6A</color>
+    <color name="warning">#FFA000</color>
+
+    <!-- UI -->
+    <color name="divider">#E0E0E0</color>
+    <color name="ripple">#33000000</color>
+
+    <!-- Redefinidos para claridad -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="primary_orange">#FE8C43</color>
+
+    <color name="gray">#888888</color>
+    <color name="gray_dark">#444444</color>
+
+    <color name="text_hint_dark">#BBBBBB</color>
+
+    <color name="surface_dark">#2C2C2C</color>
+    <color name="card_dark">#2A2A2A</color>
+
+    <color name="green">#4CAF50</color>
+    <color name="red">#F44336</color>
+
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Botón principal oscuro -->
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="backgroundTint">@color/primary_orange</item>
+        <item name="iconTint">@color/white</item>
+    </style>
+
+    <!-- Botón de texto oscuro -->
+    <style name="Widget.App.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/primary_orange</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="rippleColor">@color/gray_dark</item>
+        <item name="iconTint">@color/gray_dark</item>
+    </style>
+
+    <!-- Botón con contorno oscuro -->
+    <style name="Widget.App.Button.IconButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="strokeColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="iconTint">@color/white</item>
+    </style>
+
+    <!-- FloatingActionButton oscuro -->
+    <style name="Widget.App.Button.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/surface_dark</item>
+        <item name="tint">@color/white</item>
+        <item name="rippleColor">@color/white</item>
+        <item name="borderWidth">0dp</item>
+        <item name="elevation">6dp</item>
+    </style>
+
+    <!-- Campo de texto oscuro -->
+    <style name="Widget.App.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/text_hint_dark</item>
+        <item name="hintTextColor">@color/text_hint_dark</item>
+        <item name="android:textColorHint">@color/text_hint_dark</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxBackgroundColor">#1F1F1F</item>
+    </style>
+
+    <!-- Tarjetas oscuras -->
+    <style name="Widget.App.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardBackgroundColor">@color/card_dark</item>
+    </style>
+
+    <!-- Texto para TextInput -->
+    <style name="TextAppearance.App.TextInputLayout" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>
